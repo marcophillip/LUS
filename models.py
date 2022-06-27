@@ -97,17 +97,17 @@ class Eff(tf.keras.models.Model):
                           weights="imagenet",
                           input_shape=(224,224, 3)),
             
-#                     'efficientnetB0':efficientnet.EfficientNetB0(
-#                                       include_top=False,
-# #                                       pooling='avg',
-#                                       weights="noisy-student",
-#                                       input_shape=(224,224, 3)),
-
-                    'efficientnetB0':tf.keras.applications.EfficientNetB0(
+                    'efficientnetB0':efficientnet.EfficientNetB0(
                                       include_top=False,
-                                      weights='imagenet',
-                                      input_shape=(224,224, 3)
-                                        ),
+#                                       pooling='avg',
+                                      weights="noisy-student",
+                                      input_shape=(224,224, 3)),
+
+#                     'efficientnetB0':tf.keras.applications.EfficientNetB0(
+#                                       include_top=False,
+#                                       weights='imagenet',
+#                                       input_shape=(224,224, 3)
+#                                         ),
             
                     'efficientnetB1':tf.keras.applications.EfficientNetB1(
                                       include_top=False,

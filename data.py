@@ -166,7 +166,7 @@ class TestGenerator(tf.data.Dataset):
 
             image = cv2.resize(image,(224,224))
 
-            image = tf.keras.applications.densenet.preprocess_input(image)
+            image = tf.keras.applications.efficientnet.preprocess_input(image)
 
             class_ = classes[i]
 
